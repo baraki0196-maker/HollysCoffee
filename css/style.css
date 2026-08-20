@@ -1,0 +1,528 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    /* background: #f5f5f5; */
+    color: #333;
+}
+
+.p {
+    font-size: 12px;
+}
+
+header {
+    width: 100%;
+    border-bottom: -1px solid #a42228;
+}
+
+.top-menu {
+    width: 940px;
+    margin: 11px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 2px 0;
+    text-align: center;
+}
+.logo {
+    margin-top: 6px;
+    margin-left: -6px;
+}
+.top-left{
+    margin-top: 3px;
+    margin-left: -2px;
+}
+.top-left a {
+    display: inline-block;
+    margin-right: 8px;
+}
+
+.util {
+    overflow: hidden;
+    position: absolute;
+    top: 17px;
+    right: 0px
+}
+.top-right a {
+    display: inline-block;
+    margin-right: 8px;
+    padding: -2px;
+}
+
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 59px;
+}
+
+.nav ul {
+    display: flex;
+    gap: 60px;
+}
+
+.nav .gnb {
+    display: flex;
+    justify-content: center;
+    width: 180px;
+    text-align: center;
+    position: relative;
+    padding: 10px;
+}
+
+.sub {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.sub-bg {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: 280px;
+    background: #4d4948;
+    z-index: 50;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #222;
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.call {
+    position: fixed;
+    top: 31px;
+    left: 50%;
+    margin-left: 500px;
+    z-index: 999;
+}
+
+.main-banner {
+    height: 480px;
+}
+
+.main-banner .kimyongil {
+    height: 100%;
+    max-width: 1920px;
+}
+
+.main-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main-banner .swiper-pagination {
+    bottom: -7px;
+}
+
+.main-banner .swiper-pagination-bullet {
+    background-color: #a42228;
+    width: 10px;
+    height: 10px;
+}
+
+.content {
+    width: 940px;
+    margin: 0 auto;
+    padding: 46px 0 100px;
+}
+
+.card img { 
+    display: block;
+    padding: 10px;
+}
+.card-group {
+    /* padding: 50px; */
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    /* height: 272px; */
+}
+
+.card-group .card:nth-child(1),
+.card-group .card:nth-child(3) {
+    background-color: #faf9f7;
+    padding-top: 30px;
+}
+
+.card-group .card:nth-child(1) h2,
+.card-group .card:nth-child(3) h2 {
+    padding-left: 19px;
+}
+
+.card-group .card:nth-child(2) {
+    vertical-align: top;
+    border: none;
+    width: 460px;
+    padding-top: 15px;
+    margin-left: 15px;
+}
+
+.card-group .card div span {
+    font-size: 14px
+}
+
+.card-group .card div {
+    display: flex;
+}
+
+.card-group .card ul {
+    margin-top: 80px;
+}
+
+.card-group .card ul li {
+    display: inline;
+}
+
+.img_wr {
+    display: flex;
+}
+
+.card ul {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin-top: 10px;
+}
+
+.card li {
+    width: 120px;
+    text-align: center;
+    position: relative;
+}
+
+.card li img {
+    width: 86px;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+.card li span {
+    display: block;
+    font-size: 12px;
+    color: #555;
+    line-height: 18px;
+}
+
+.card li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -12px;
+    width: 1px;
+    height: 95px;
+    background: #ddd;
+}
+
+.card-group .card div img {
+    width: 86px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.notice-area {
+    display: flex;
+}
+
+.arrow {
+    position: relative;
+    padding-left: 20px;
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: url('../images/ico_arrow.gif')no-repeat center/contain;
+}
+.arrow2 {
+    position: relative;
+    display: inline-block;
+}
+.arrow2::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: -20px;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: url('../images/ico_arrow.gif')no-repeat center/contain;
+}
+
+.notice-box {
+    width: 210px;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 36px;
+    margin-right: 35px;
+}
+
+.notice-box:last-child {
+    margin-right: 0;
+}
+
+.notice-box:last-child a {
+    margin: 0 0 15px;
+    line-height: 1.6;
+    color: #666;
+    display: block;
+    width: 62px;
+}
+
+.notice-box h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.notice-box ul li {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.notice-box ul li a {
+    display: block;
+    width: 153px;
+}
+
+.notice-box ul li {
+    margin-bottom: 8px;
+    color: #666;
+}
+
+.notice-box:last-child {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.notice-box:last-child img {
+    padding: 10px 14px;
+}
+
+.notice-box:last-child span {
+    text-align: center;
+}
+
+.notice-box:last-child .dot {
+    border-right: 1px dotted #666;
+}
+
+.notice-box a>* {
+    display: block;
+}
+
+.promo-box {
+    display: flex;
+    align-items: center;
+    line-height: 19px;
+    border: #de898e;
+    object-fit: cover;
+    display: block;
+}
+
+.snswar {
+    border-top: 2px solid #b5121b;
+    padding: 40px 0 0 0;
+    margin-top: 31px;
+}
+
+.snswar-wrap {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-top: 30px;
+    padding: 30px 0;
+
+}
+
+.snswar {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    margin-top: 40px;
+    font-weight: 700;
+    /* position: absolute; */
+}
+
+.hollyslive {
+    line-height: 1px;
+    letter-spacing: 2px;
+}
+
+footer {
+    height: 148px;
+    background-color: #ba000c;
+}
+
+.footer-inner {
+    padding-top: 33px;
+    width: 940px;
+    margin: 0 auto;
+    font-size: 11px;
+}
+
+.footer-links a {
+    color: #faeff0;
+    padding: 0 5px;
+    position: relative;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 10px;
+    background-color: #faeff0;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-links a:last-child:after {
+    display: none;
+}
+
+.footer-inner p {
+    color: #de898e;
+}
+
+.footer-inner p.mg {
+    margin-top: 23px;
+}
+
+.gnb {
+    position: relative;
+    width: 100%;
+    background: #fff;
+    z-index: 999;
+}
+
+.menu {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu>li {
+    width: 156px;
+}
+
+.menu>li>a {
+    height: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    margin-bottom: 12px;
+    margin-top: -12px;
+    margin-left: 3px;
+}
+
+.menu>li>a strong {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.menu>li>a span {
+    display: none;
+    font-size: 11px;
+    color: #666;
+    padding: 1px 0 0 0;
+}
+/* slied 실행할때 밑의 글자가 hover 했을때 나오도록 할때는 */
+/* 실행해야 할 글자에 display: none; 하고 hover에 block; 걸어준다. */
+.menu>li:hover>a {
+    background: #c40018;
+}
+
+.menu>li:hover>a span {
+    display: block;
+    color: #fff;
+}
+
+.mega-menu {
+    position: absolute;
+    left: 0;
+    top: 60px;
+    width: 100%;
+    height: 320px;
+    background: #4d4949;
+    display: flex;
+    justify-content: center;
+    padding: 18px 0 15px;
+    display: none;
+
+}
+
+.menu-box {
+
+    width: 158px;
+    color: #bdbdbd;
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.menu-box p {
+
+    font-size: 13px;
+    font-weight: 700;
+    margin-bottom: 18px;
+}
+
+.menu-box ul li {
+
+    margin-bottom: 10px;
+}
+
+.menu-box ul li a {
+
+    color: #bdbdbd;
+    font-size: 13px;
+}
+
+.menu-box p:hover {
+
+    color: #fff;
+}
+
+.menu-box ul li a:hover {
+
+    color: #fff;
+}
+
+.gnb>li:hover>a {
+
+    background: #c30017;
+    color: #fff;
+}
